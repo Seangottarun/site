@@ -56,8 +56,9 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Exploring the world through engineering, research, and design"
+  - text: "Interested in computer vision, biomechanics, computer architecture, and running gait analysis"
+  - text: "Full-time ECE engineering student, part-time athlete, life-long learner"
 
 me-img: "/img/jetpacktocat.png"
 
