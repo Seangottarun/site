@@ -1,88 +1,66 @@
-# { Personal } Jekyll Theme
-![Build Status](https://travis-ci.org/le4ker/personal-jekyll-theme.svg?branch=master)
-![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
-[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/panossakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Personal Website
+This is a personalized fork of the [{ Personal }](https://github.com/le4ker/personal-jekyll-theme) jekyll template (pun intended :wink).
 
-{ Personal } is a free responsive Jekyll theme, about you :wink:
+## Install `jekyl`
 
-You can watch it in action [here](https://le4ker.github.io/personal-jekyll-theme/)!
+1. Install `rvm`
 
-<img src="https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-mobile.mov.gif" height="480">
-
-<img src="https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-desktop.mov.gif" height="600" width="960">
-
-## What value does { Personal } add
-
-* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
-  * Modern and minimal design
-    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
-    * Sweet animations
-    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
-  * Timeline
-    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
-  * White on black text, making the reading experience tireless
-  * Google analytics  
-* Customization and full control of your website and blog through the site config
-* Customization of the website's coloring
-* Blogging functionality
-  * Preview of the latest post in the home page
-  * Archive page
-  * Syntax highlighting
-  * Emojis
-  * Gesture navigation in archive and post pages by swiping
-  * Hashtags
-  * Categories
-  * Disqus comments
-  * Bootstrap share buttons
-  * RSS feed
-* Author blurb under the posts
-* 404 page
-* iOS and Android Web App mode
-* Enforcing of https protocol
-* Protection from email harvesting
-* Sitemap
-* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
-
-## Documentation
-
-The theme contains documentation in the form of [blog posts](https://le4ker.github.io/personal-jekyll-theme/blog/index.html).
-
-## How to run locally
-
-First, you need to install jekyll and the dependencies of { Personal } by running:
-
-```shell
-./scripts/install
+#### Ubuntu
+Install [`ubuntu_rvm`](https://github.com/rvm/ubuntu_rvm)
+```bash
+sudo apt-get install software-properties-common
+# Run next few lines in new terminal
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get update
+sudo apt-get install rvm
 ```
 
-Then, you can build and serve your website by simply running:
-
-```shell
-./scripts/serve-production
+If you get `unable to locate package`, check if the package is available for your version.
+```bash
+cat /var/lib/apt/lists/ppa.launchpad.net_rael-gc_*_Packages | grep "Package:" | sort | uniq
 ```
 
-To serve across lan (requires su to forward the port 4000 over lan):
-
-```shell
-./scripts/serve-lan-production
+#### macOS
+Install [`rvm`](https://rvm.io/rvm/install)
+```bash
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
 ```
 
-### Docker
-
-Run using Docker:
-
-```
-docker run --rm -it -p 4000:4000 -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll serve --watch --host "0.0.0.0" --config _config.yml,_config.dev.yml
+#### macOS
+Install [`rvm`](https://rvm.io/rvm/install)
+```bash
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
 ```
 
-Run using Docker with Docker Compose:
-```
-docker-compose up
+2. Open new terminal and install `ruby`
+```bash
+rvm list known
+rvm install 2.7.2
+rvm use 2.7.2
 ```
 
-## OSS used in { Personal }
+3. Install `jekyl`
+```bash
+gem install jekyll bundler
+```
 
-One of the reasons { Personal } is real is the following OSS projects:
+4. Install `Gemfile`
+```bash
+bundle install
+```
+
+Note: you may have issues with `openssl` for compiling Ruby gems from source. This
+can be solved by running `brew info openssl` and following the provided instructions
+to allow compilers to find `openssl`.
+
+## Local Development
+```bash
+# Launches site on localhost:4000
+bundle exec jekyll serve --livereload
+```
+## OSS used
+
+Big thanks to the following OSS projects:
 
   1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
   2. [hammer.js](https://hammerjs.github.io/)
@@ -90,9 +68,4 @@ One of the reasons { Personal } is real is the following OSS projects:
   4. [RRSSB](https://github.com/kni-labs/rrssb)
   5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
   6. [typed.js](https://github.com/mattboldt/typed.js/)
-
-<div style="font-size:16px;margin:0 auto;width:300px">
-    <a href="https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi">
-        <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
-    </a>
-</div>
+  7. [{ Personal }](https://github.com/le4ker/personal-jekyll-theme)
