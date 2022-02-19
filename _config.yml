@@ -3,7 +3,8 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://seanwu.io"
+url: "https://seangottarun.github.io" # temp testing
+# url: "https://seanwu.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +13,8 @@ url: "https://seanwu.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: ""
+baseurl: /site # temp testing
+# baseurl: ""
 
 # Google tracking id
 
