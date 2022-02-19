@@ -60,7 +60,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Interested in computer vision, biomechanics, computer architecture, and running gait analysis"
   - text: "Full-time ECE engineering student, part-time athlete, life-long learner"
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/headshot_2022.png" # leave blank if you don't want a logo
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
