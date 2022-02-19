@@ -128,16 +128,22 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+  - image: "/img/timeline/intel.png"
+    date: "May 2021 - today"
+    # location: "Intel Corporation"
+    description: "SystemVerilog FPGA Soft IP for accessing external memory"
+  - image: "/img/timeline/uoft.png"
+    date: "May 2020 - Aug 2020"
+    # location: "U of T Intelligent Sensory Microsystems Lab"
+    description: "3D computational imaging software using Structured Light"
+  - image: "/img/timeline/nus_eng.jpg"
+    date: "May 2019 - Aug 2019"
+    # location: "National University of Singapore"
+    description: "Mathematical simulations for energy efficient and environmentally friendly air conditioners"
 
 # First image of the Timeline
 
-timeline-img: "/img/timeline/default.png"
+timeline-img: "/img/timeline/code.svg"
 
 ###########
 # Contact #
