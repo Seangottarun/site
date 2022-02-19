@@ -1,5 +1,5 @@
 # Personal Website
-This is a personalized fork of the [{ Personal }](https://github.com/le4ker/personal-jekyll-theme) jekyll template (pun intended :wink).
+This is a personalized fork of the [{ Personal }](https://github.com/le4ker/personal-jekyll-theme) jekyll template (pun intended 😉).
 
 ## Install `jekyl`
 
