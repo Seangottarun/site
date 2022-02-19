@@ -16,7 +16,7 @@ baseurl: ""
 
 # Google tracking id
 
-google-tracking-id: ""
+# google-tracking-id: ""
 
 # Forces https everywhere in your website, except when you serve it locally
 # If you are not hosted on Github Pages, and your host doesn't support https
@@ -39,8 +39,7 @@ favicon: "/img/favicon.ico"
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
-logo: "/img/author.png" # leave blank if you don't want a logo
+# logo: "" # leave blank if you don't want a logo
 
 background-img: "../img/rom_silhouette.jpg"
 
@@ -92,7 +91,8 @@ apple-status-bar-style: "black"
 # Web app mode #
 ################
 
-web-app-mode: True
+# web-app-mode: True
+web-app-mode: False
 
 # Icons for Web App mode
 
@@ -142,7 +142,6 @@ events:
     description: "Mathematical simulations for energy efficient and environmentally friendly air conditioners"
 
 # First image of the Timeline
-
 timeline-img: "/img/timeline/code.svg"
 
 ###########
@@ -163,8 +162,7 @@ pgp: False
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
-author_blurb_image: "/img/author.png"
+author_blurb_image: "/img/headshot_2022.png" # leave blank if you don't want a logo
 
 ##################
 # Social Buttons #
@@ -188,29 +186,22 @@ social:
 
 err-404-img: "/img/404_error.png"
 
-##################
-# GPG on Keybase #
-##################
-
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
-
 ################################################################################
 
 # NB! Tread carefully if you want to change the variables below this point!
 
 # Sections shown in the index page
 
+# TODO: uncomment latest post once we have blog posts
 pages_list:
   About: 'about'
-  Blog: 'latest-post'
+  # Blog: 'latest-post'
   Timeline: 'timeline'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
-
-exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+# TODO: remove blog from exclusions when actual blog posts are needed
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts", "*.bak", "blog"]
 
 # Pagination path
 
