@@ -38,6 +38,7 @@
 
   <!-- Plausible Analytics -->
   <script defer data-domain="seanwu.io" src="https://plausible.io/js/plausible.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
   {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
     <meta http-equiv="refresh" content="20; url={{site.baseurl}}/">
