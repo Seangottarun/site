@@ -58,7 +58,8 @@ start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Exploring the world through engineering, research, and design"
-  - text: "Interested in computer vision, biomechanics, computer architecture, and running gait analysis"
+  - text: "Interested in autonomous driving, computer vision, and computer architecture"
+  # - text: "Interested in computer vision, biomechanics, computer architecture, and running gait analysis"
   - text: "Full-time ECE engineering student, part-time athlete, life-long learner"
 
 me-img: "/img/headshot_2022.png" # leave blank if you don't want a logo
@@ -86,6 +87,7 @@ me-img: "/img/headshot_2022.png" # leave blank if you don't want a logo
 ##############################
 # Color the browser elements #
 ##############################
+# TODO: color of browser
 color-browser: "#000000"
 apple-status-bar-style: "black"
 
@@ -131,7 +133,7 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/intel.png"
-    date: "May 2021 - today"
+    date: "May 2021 - Aug 2022"
     # location: "Intel Corporation"
     description: "SystemVerilog FPGA Soft IP for accessing external memory"
   - image: "/img/timeline/uoft.png"
